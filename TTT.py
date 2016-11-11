@@ -44,7 +44,6 @@ def turn(pos1, board2, button, a):
     # check win state
     win()
  
-    # Ai
     aiturn = False
     if not player:
  
@@ -130,7 +129,7 @@ def win():
 def reset(n):
     """ win state, reset board """
     if n == 0:
-        tkinter.messagebox.showinfo('No one won', 'No one won, restarting')
+        tkinter.messagebox.showinfo('No one won', 'No one won, restarting...')
     else:
         tkinter.messagebox.showinfo('There is a winner!', 'Player ' + str(n) + ' is the winner!')
     numb = 0
@@ -390,7 +389,6 @@ def ch9():
     button9["text"] = "O"
  
  
-# dictionary
  
 options = {"0": ch1,
            "1": ch2,
@@ -404,6 +402,7 @@ options = {"0": ch1,
            }
  
 """ *** Layout *** """
+ #buttons
  
 button1 = ttk.Button(root, text=" ", command=lambda: turn("0", board2, button1, a))
 button2 = ttk.Button(root, text=" ", command=lambda: turn("1", board2, button2, a))
