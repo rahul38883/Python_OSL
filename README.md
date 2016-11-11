@@ -1,2 +1,2 @@
 # Python_OSL
-A python project for OSL
+Tic-Tac-Toe python project for OSL Lab
